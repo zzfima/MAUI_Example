@@ -36,7 +36,7 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
-            <views:FuelAmountView />
+            <views:FuelAmountView BindingContext="{Binding FuelAmountViewModel}"/>
         </VerticalStackLayout>
     </ScrollView>
  

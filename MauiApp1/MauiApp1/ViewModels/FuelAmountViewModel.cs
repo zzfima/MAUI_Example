@@ -2,6 +2,11 @@
 {
     public class FuelAmountViewModel
     {
-        public double FuelAnount { get; set; }
+        public FuelAmountViewModel()
+        {
+            FuelAmount = 90;
+        }
+
+        public double FuelAmount { get; set; }
     }
 }

@@ -1,11 +1,14 @@
-﻿namespace MauiApp1;
+﻿using MauiApp1.ViewModels;
+
+namespace MauiApp1;
 
 public partial class App : Application
 {
-	public App()
+	public App(CompositeViewModel compositeViewModel)
 	{
 		InitializeComponent();
 
 		MainPage = new AppShell();
+		MainPage.BindingContext = compositeViewModel;
 	}
 }
